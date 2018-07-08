@@ -1,0 +1,35 @@
+{% extends "Python.html" %}
+{% block content %}
+<div class="header">
+    <a class="fa fa-home" href="{% url 'Python:all' %}"></a>
+</div>
+<div class="row">
+    <div class="column side" style="background-color:#aaa;">
+       {% include 'examplelist.html' %}
+  </div>
+  <div class="column middle" style="background-color:#bbb;">
+             <h2 style="text-align:center; color: Navy;">Python Program Examples to Print Sum of Numbers</h2>
+     <p>
+         A simple program that displays “Hello, World!”.we have used the built-in print() function to print the string Hello, world! on our screen.
+     </p>
+     <iframe height="400px" width="100%" src="https://repl.it/@gantasagar/SumofNumbers1?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+      <iframe height="400px" width="100%" src="https://repl.it/@gantasagar/SumofNumbers2?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+      <iframe height="400px" width="100%" src="https://repl.it/@gantasagar/SumofNumbers3?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+      <iframe height="400px" width="100%" src="https://repl.it/@gantasagar/SumofNumbers4?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+     <h4 class="div2">
+         <table style="width:100%;">
+             <tr>
+                 <td>
+                     <a href="{% url 'Python:h1' %}" class="w3-bar-item" >previous</a>
+                 </td>
+                 <td> </td>
+                 <td style="text-align: right;">
+                     <a href="{% url 'Python:sum' %}" class="w3-bar-item" >Next</a>
+                 </td>
+             </tr>
+         </table>
+     </h4>
+  </div>
+    <div class="column side" style="background-color:#ccc;">Addsence</div>
+</div>
+{% endblock %}
