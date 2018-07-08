@@ -1,0 +1,14 @@
+{% extends "Home.html" %}
+{% block content %}
+<div class="row">
+  <div class="column side" style="background-color:#aaa;">
+      {% include 'examplelist.html' %}
+  </div>
+  <div class="column middle" style="background-color: #00ffff;">
+            {% block  content1 %}
+
+            {% endblock %}
+  </div>
+  <div class="column side" style="background-color:#ccc;">Addsence</div>
+</div>
+{% endblock %}

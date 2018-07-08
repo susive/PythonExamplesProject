@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'CSS/main.css'%}">
+    {% include 'head.html' %}
+</head>
+<body>
+<nav class="navbar  mynav" role="navigation" id="navbar">
+    <div class="fixed-header">
+        <marquee direction="right" onmouseover="this.stop();" onmouseout="this.start();"> <a href="{% url 'Python:all' %}"> <img src="{% static 'images/logo1.png'%}" alt="logo" style="position: center top"> </a></marquee>
+    </div>
+</nav>
+<article class="div1">
+    {% block  content %}
+
+    {% endblock %}
+</article>
+
+</body>
+<script type="text/javascript" src="{% static 'JS/main.js' %}"></script>
+</html>

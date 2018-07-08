@@ -1,0 +1,21 @@
+{% extends "hlist.html" %}
+{% block content2 %}
+
+     <h1 style="text-align:center; color: Navy;">Hello World</h1>
+     <h4 class="div1">
+         <iframe height="400px" width="100%" src="https://repl.it/@gantasagar/Fibonacci?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+     </h4>
+     <h4 class="div2">
+         <table style="width:100%;">
+             <tr>
+                 <td>
+                     <a href="{% url 'Python:h1' %}" class="w3-bar-item" >previous</a>
+                 </td>
+                 <td> </td>
+                 <td style="text-align: right;">
+                     <a href="{% url 'Python:h1' %}" class="w3-bar-item" >Next</a>
+                 </td>
+             </tr>
+         </table>
+     </h4>
+{% endblock %}
