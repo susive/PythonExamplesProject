@@ -1,9 +1,65 @@
 from django.views.generic import TemplateView
 
 
-
 class HomePage(TemplateView):
     template_name = 'index.html'
+
+
+class UseofPython(TemplateView):
+    template_name = 'useofpython.html'
+
+
+class PythonCanDo(TemplateView):
+    template_name = 'pythoncando.html'
+
+
+class WhyPython(TemplateView):
+    template_name = 'whypython.html'
+
+
+class Variablediclration(TemplateView):
+    template_name = 'Python/variable.html'
+
+
+class DataTypes(TemplateView):
+    template_name = 'Python/datatypes.html'
+
+
+class Bool(TemplateView):
+    template_name = 'Python/bool.html'
+
+
+class Numbers(TemplateView):
+    template_name = 'Python/numbers.html'
+
+
+class Strings(TemplateView):
+    template_name = 'Python/strings.html'
+
+
+class Lists(TemplateView):
+    template_name = 'Python/lists.html'
+
+
+class Tuples(TemplateView):
+    template_name = 'Python/tuples.html'
+
+
+class Sets(TemplateView):
+    template_name = 'Python/sets.html'
+
+
+class Dictionarys(TemplateView):
+    template_name = 'Python/dictionarys.html'
+
+
+class Conversions(TemplateView):
+    template_name = 'Python/conversionbetweendatatypes.html'
+
+
+class Conditionalstatements(TemplateView):
+    template_name = 'Python/conditionalstatements/conditionalstatements.html'
+
 
 
 class hello(TemplateView):
@@ -16,4 +72,5 @@ class sumodNum(TemplateView):
 
 class Even(TemplateView):
     template_name = 'Evennumbers/even.html'
+
 

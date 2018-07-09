@@ -1,0 +1,20 @@
+{% extends "Python.html" %}
+{% block content1 %}
+<header style="color: Navy; font-family: 'Courier New';font-size: 22px;">Python Data Types</header>
+<p class="p1">
+There are seven types of DataTypes are there in Python:
+</p>
+<ul class="li1">
+    <li><a href="{% url 'Python:bool' %}">Python Bool</a></li>
+    <li><a href="{% url 'Python:numbers'%}" >Python Numbers</a></li>
+    <li><a href="{% url 'Python:strings' %}">Python Strings</a></li>
+    <li><a href="{% url 'Python:list' %}">Python List</a></li>
+    <li><a href="{% url 'Python:tuple' %}">Python Tuple</a></li>
+    <li><a href="{% url 'Python:set' %}">Python Set</a></li>
+    <li><a href="{% url 'Python:dict' %}">Python Dictionary</a></li>
+</ul>
+ {% block  content3 %}
+
+ {% endblock %}
+
+{% endblock %}
