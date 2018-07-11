@@ -1,16 +1,6 @@
 {% extends "Python.html" %}
 {% block content1 %}
 <header style="color: Navy; font-family: 'Courier New';font-size: 22px;">Python Conditional statements</header>
-<p class="p1">
-    Python supports the usual logical conditions from mathematics:</p>
-<ul class="li1">
-    <li>Equals: a == b</li>
-    <li>Not Equals: a != b</li>
-    <li>Less than: a < b</li>
-    <li>Less than or equal to: a <= b</li>
-    <li>Greater than: a > b</li>
-    <li>Greater than or equal to: a >= b</li>
-</ul>
 <p class="p1">List of Conditional statements are:</p>
 <ul class="li1">
     <li><a href="{% url 'Python:if' %}">Python If statement</a></li>
@@ -20,7 +10,9 @@
     <li><a href="{% url 'Python:if_el' %}">Python If..Else Statement</a></li>
     <li><a href="{% url 'Python:if_EF_el' %}">Python If..Elif..Else Statement</a></li>
     <li><a href="{% url 'Python:NIf' %}">Python Nested If Statement</a></li>
-
 </ul>
+ {% block  content3 %}
+
+ {% endblock %}
 
 {% endblock %}

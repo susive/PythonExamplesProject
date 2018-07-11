@@ -9,10 +9,6 @@ class UseofPython(TemplateView):
     template_name = 'useofpython.html'
 
 
-class PythonCanDo(TemplateView):
-    template_name = 'pythoncando.html'
-
-
 class WhyPython(TemplateView):
     template_name = 'whypython.html'
 
@@ -60,6 +56,37 @@ class Conversions(TemplateView):
 class Conditionalstatements(TemplateView):
     template_name = 'Python/conditionalstatements/conditionalstatements.html'
 
+
+class Ifstatement(TemplateView):
+    template_name = 'Python/conditionalstatements/if.html'
+
+
+class Elsestatements(TemplateView):
+    template_name = 'Python/conditionalstatements/else.html'
+
+
+class ElIfstatements(TemplateView):
+    template_name = 'Python/conditionalstatements/elif.html'
+
+
+class If_Elsestatements(TemplateView):
+    template_name = 'Python/conditionalstatements/if_else.html'
+
+
+class If_Elifstatement(TemplateView):
+    template_name = 'Python/conditionalstatements/if_elif.html'
+
+
+class If_Elif_Elsestatement(TemplateView):
+    template_name = 'Python/conditionalstatements/if_elif_else.html'
+
+
+class NestedIfstatement(TemplateView):
+    template_name = 'Python/conditionalstatements/nested_if.html'
+
+
+class Loops(TemplateView):
+    template_name = 'Python/Loops/loops.html'
 
 
 class hello(TemplateView):
