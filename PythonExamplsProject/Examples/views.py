@@ -18,35 +18,35 @@ class Variablediclration(TemplateView):
 
 
 class DataTypes(TemplateView):
-    template_name = 'Python/datatypes.html'
+    template_name = 'Python/Datatypes/datatypes.html'
 
 
 class Bool(TemplateView):
-    template_name = 'Python/bool.html'
+    template_name = 'Python/Datatypes/bool.html'
 
 
 class Numbers(TemplateView):
-    template_name = 'Python/numbers.html'
+    template_name = 'Python/Datatypes/numbers.html'
 
 
 class Strings(TemplateView):
-    template_name = 'Python/strings.html'
+    template_name = 'Python/Datatypes/strings.html'
 
 
 class Lists(TemplateView):
-    template_name = 'Python/lists.html'
+    template_name = 'Python/Datatypes/lists.html'
 
 
 class Tuples(TemplateView):
-    template_name = 'Python/tuples.html'
+    template_name = 'Python/Datatypes/tuples.html'
 
 
 class Sets(TemplateView):
-    template_name = 'Python/sets.html'
+    template_name = 'Python/Datatypes/sets.html'
 
 
 class Dictionarys(TemplateView):
-    template_name = 'Python/dictionarys.html'
+    template_name = 'Python/Datatypes/dictionarys.html'
 
 
 class Conversions(TemplateView):
@@ -69,14 +69,6 @@ class ElIfstatements(TemplateView):
     template_name = 'Python/conditionalstatements/elif.html'
 
 
-class If_Elsestatements(TemplateView):
-    template_name = 'Python/conditionalstatements/if_else.html'
-
-
-class If_Elifstatement(TemplateView):
-    template_name = 'Python/conditionalstatements/if_elif.html'
-
-
 class If_Elif_Elsestatement(TemplateView):
     template_name = 'Python/conditionalstatements/if_elif_else.html'
 
@@ -87,6 +79,14 @@ class NestedIfstatement(TemplateView):
 
 class Loops(TemplateView):
     template_name = 'Python/Loops/loops.html'
+
+
+class forloop(TemplateView):
+    template_name = 'Python/Loops/for.html'
+
+
+class whileloop(TemplateView):
+    template_name = 'Python/Loops/while.html'
 
 
 class hello(TemplateView):

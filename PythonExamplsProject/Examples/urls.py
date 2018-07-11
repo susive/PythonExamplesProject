@@ -22,10 +22,10 @@ urlpatterns = [
     url(r"^Cstatements/If/$", views.Ifstatement.as_view(), name='if'),
     url(r"^Cstatements/Else/$", views.Elsestatements.as_view(), name='el'),
     url(r"^Cstatements/Elif/$", views.ElIfstatements.as_view(), name='EF'),
-    url(r"^Cstatements/If_Else/$", views.If_Elsestatements.as_view(), name='if_el'),
-    url(r"^Cstatements/If_Elif/$", views.If_Elifstatement.as_view(), name='if_EF'),
     url(r"^Cstatements/If_Elif_Else/$", views.If_Elif_Elsestatement.as_view(), name='if_EF_el'),
     url(r"^Cstatements/NestedIf/$", views.NestedIfstatement.as_view(), name='NIf'),
     url(r"^Loops/$", views.Loops.as_view(), name='loops'),
+    url(r"^Loops/for/$", views.forloop.as_view(), name='for'),
+    url(r"^Loops/while/$", views.whileloop.as_view(), name='while'),
 
 ]
