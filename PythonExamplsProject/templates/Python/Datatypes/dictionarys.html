@@ -4,6 +4,32 @@
 <P class="p1">Dictionary is an unordered collection of key-value pairs. It is generally used when we have a huge amount
     of data. Dictionaries are optimized for retrieving data. We must know the key to retrieve the value.Dictionary are
     Python’s built-in mapping type.In Python, dictionaries are defined within braces {} with each item being a pair
-    in the form key:value. Key and value can be of any type.</P>
+    in the form key:value. Key and value can be of any type.dictionary looks like this:</P>
+<pre>
+    <code>
+        >> d = {'a' : 1, 'b' : 'name', 'c' : [1, 2, 3, 4]}
+        >> print(d)
+        >> {'a': 1, 'b': 'name', 'c': [1, 2, 3, 4]}
+    </code>
+</pre>
 <p class="p1"> We use key to retrieve the respective value. But not the other way around.</p>
+<pre>
+    <code>
+        >> getting Dictionary values by there key values
+        >> d = {'a' : 1, 2 : 'name', 1.3 : [1, 2, 3, 4]}
+        >> print(d['a'])
+        >> 1
+        >> print(d[2])
+        >> name
+        >> print(d[1.3])
+        >> [1, 2, 3, 4]
+    </code>
+</pre>
+<p class="p1">Dictionaries are mutable.see the below example.</p>
+<div class="wrapper">
+    <div class="hidelogo"></div>
+    <div class="hidelogo1"></div>
+    <iframe height="400px" width="100%" src="https://repl.it/@gantasagar/ElderlyColdProgrammingmacro?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+</div>
+<p class="p1">By seeing above example, we are able to changing the value with in a Dictionary.so Dictionaries are mutable.</p>
 {% endblock %}

@@ -1,0 +1,102 @@
+{% extends "Python/Functions/function.html" %}
+{% block content3 %}
+<header style="color: Navy; font-family: 'Courier New';font-size: 22px;">Syntax of Function:</header>
+<p class="p1">
+    A function is defined by using the <i style="color:blue">def</i> keyword, followed by a name of your choosing, followed by a set of
+    parentheses which hold any parameters, and ending with a colon. the function body contains One or more valid python statements.
+    Statements must have same indentation level (usually 4 spaces). And an optional <i style="color:blue">return</i> statement to return a value from the function.
+</p>
+<pre>
+    <code>
+        def function_name(parameters):
+            """docstring"""
+            statement1
+            statement2
+    </code>
+</pre>
+<header style="color: Navy; font-family: 'Courier New';font-size: 22px;">Defining an empty Function:</header>
+<pre>
+    <code>
+        def getname():
+            pass
+    </code>
+</pre>
+<header style="color: Navy; font-family: 'Courier New';font-size: 22px;">How to call a Function.</header>
+<p class="p1">By using function name</p>
+<pre>
+    <code>
+        getname()
+    </code>
+</pre>
+<p class="p1">
+Example on Functions with out parameters.
+</p>
+<div class="wrapper">
+    <div class="hidelogo"></div>
+    <div class="hidelogo1"></div>
+    <iframe height="400px" width="100%" src="https://repl.it/@gantasagar/FunctionExample?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+</div>
+<p class="p1">Example on functions with parameters.</p>
+<div class="wrapper">
+    <div class="hidelogo"></div>
+    <div class="hidelogo1"></div>
+<iframe height="400px" width="100%" src="https://repl.it/@gantasagar/functionwithParameters?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+</div>
+<header style="color: Navy; font-family: 'Courier New';font-size: 22px;"> Documentation String(Docstring):</header>
+<p class="p1">
+    The first string after the function header is called the docstring and is short for documentation string.
+    It is used to explain in brief, what a function does.we can define docstring with in a triple quotes (""" """ or ''' ''').
+    we will gte docstring by using <i style="color:blue">__doc__</i>. let's see the below example.
+</p>
+<div class="wrapper">
+    <div class="hidelogo"></div>
+    <div class="hidelogo1"></div>
+    <iframe height="400px" width="100%" src="https://repl.it/@gantasagar/DocStringExample?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+</div>
+<header style="color: Navy; font-family: 'Courier New';font-size: 22px;">return statement in Python:</header>
+<p class="p1">The <i style="color:blue">return</i> statement is used to return's a value by exit a function and go
+    back to the place from where it was called.</p>
+<header style="color: Navy; font-family: 'Courier New';font-size: 22px;"> Syntax of return </header>
+<pre>
+    <code> return < values > </code>
+</pre>
+<p class="p1">Let's see the example.</p>
+<div class="wrapper">
+    <div class="hidelogo"></div>
+    <div class="hidelogo1"></div>
+    <iframe height="400px" width="100%" src="https://repl.it/@gantasagar/functionReturnExample?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+</div>
+<header style="color: Navy; font-family: 'Courier New';font-size: 22px;">Python Recursive Function:</header>
+<p class="p1">A function that calls itself is called recursive function</p>
+<p class="p1">See the below example to implements the sum of first n number of integers using recursive function:</p>
+<div class="wrapper">
+    <div class="hidelogo"></div>
+    <div class="hidelogo1"></div>
+    <iframe height="400px" width="100%" src="https://repl.it/@gantasagar/recursive-function-example?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+</div>
+<header style="color: Navy; font-family: 'Courier New';font-size: 22px;">Scope and Lifetime of variables</header>
+<p class="p1">Scope of a variable is the portion of a program where the variable is recognized. Parameters and variables defined
+    inside a function is not visible from outside. Hence, they have a local scope.</p>
+<p class="p1">
+    Here is an example to illustrate the scope of a variable inside a function.
+</p>
+<div class="wrapper">
+    <div class="hidelogo"></div>
+    <div class="hidelogo1"></div>
+    <iframe height="400px" width="100%" src="https://repl.it/@gantasagar/local-and-global-vaiables?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+</div>
+<p class="p1">Here, we can see that the value of x is 10 initially. Even though the function abc() changed the value
+    of x to 'abc', it did not effect the value outside the function.</p>
+<p class="p1">This is because the variable x inside the function is different (local to the function) from the one outside.
+    Although they have same names, they are two different variables with different scope.</p>
+<p class="p1"> On the other hand, variables outside of the function are visible from inside. They have a global scope.</p>
+
+<p class="p1"> We can read these values from inside the function but cannot change (write) them. In order to modify the value of variables
+    outside the function, they must be declared as global variables using the keyword global.</p>
+<p class="p1"> let's see the below example:</p>
+<div class="wrapper">
+    <div class="hidelogo"></div>
+    <div class="hidelogo1"></div>
+    <iframe height="400px" width="100%" src="https://repl.it/@gantasagar/globelvariableswithinthefunction?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+</div>
+  {% endblock %}

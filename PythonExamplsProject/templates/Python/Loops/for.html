@@ -2,4 +2,60 @@
 {% block content3 %}
 <header style="color: Navy; font-family: 'Courier New';font-size: 22px;">Python For Loops</header>
 <p class="p1">A for loop implements the repeated execution of code based on a loop counter or loop variable.</p>
+<header style="color: Navy; font-family: 'Courier New';font-size: 22px;">Syntax of for Loop </header>
+<pre>
+    <code>
+        for var in sequence:
+            body of for loop
+    </code>
+</pre>
+<p class="p1">Here, <i style="color:blue">var</i> is the variable that takes the value of the item inside the sequence on each iteration.</p>
+<p class="p1">The body of for loop is separated from the rest of the code using indentation.</p>
+<p class="p1">Example on for loop</p>
+<div class="wrapper">
+    <div class="hidelogo"></div>
+    <div class="hidelogo1"></div>
+    <iframe height="400px" width="100%" src="https://repl.it/@gantasagar/forloopexamplewithsequence?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+</div>
+<header style="color: Navy; font-family: 'Courier New';font-size: 22px;">The range() function in for loop </header>
+<p class="p1">The range() function has two sets of parameters, as follows:</p>
+<p class="p1">1.<i>range(stop):</i></p>
+<ul class="li1">
+    <li>stop: Number of integers (whole numbers) to generate up to, but not including this number.</li>
+</ul>
+<p class="p1">Let's see the below example</p>
+<div class="wrapper">
+    <div class="hidelogo"></div>
+    <div class="hidelogo1"></div>
+    <iframe height="400px" width="100%" src="https://repl.it/@gantasagar/forloopusingrangefunction?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+</div>
+<p class="p1">2.<i>range([start], [stop],[step])</i></p>
+<ul class="li1">
+    <li>start: Starting number of the sequence.</li>
+    <li>stop: Generate numbers up to, but not including this number.</li>
+    <li>step: Difference between each number in the sequence.step size defaults to 1 if not provided.</li>
+</ul>
+<p class="p1">Let's see the below example for how to use start and stop values in range function.</p>
+<div class="wrapper">
+    <div class="hidelogo"></div>
+    <div class="hidelogo1"></div>
+        <iframe height="400px" width="100%" src="https://repl.it/@gantasagar/for-loop-using-range-function-with-start-and-stop-values?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+</div>
+<p class="p1">Example for start, stop and step values in range function </p>
+<div class="wrapper">
+    <div class="hidelogo"></div>
+    <div class="hidelogo1"></div>
+    <iframe height="400px" width="100%" src="https://repl.it/@gantasagar/for-loop-using-range-function-with-step-values?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+</div>
+
+<header style="color: Navy; font-family: 'Courier New';font-size: 22px;">for loop with else </header>
+<p class="p1">A for loop can have an optional else block as well.
+    The else part is executed if the items in the sequence used in for loop exhausts. </p>
+<p class="p1">break statement can be used to stop a for loop. In such case, the else part is ignored.
+    Hence, a for loop's else part runs if no break occurs.</p>
+<div class="wrapper">
+    <div class="hidelogo"></div>
+    <div class="hidelogo1"></div>
+    <iframe height="400px" width="100%" src="https://repl.it/@gantasagar/for-loop-using-else-statement?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+</div>
 {% endblock %}

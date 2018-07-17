@@ -4,7 +4,60 @@
 <P class="p1">List is an ordered sequence of items. It is one of the most used datatype in Python and is very flexible.
     All the items in a list do not need to be of the same type. Declaring a list is pretty straight forward.
     Items separated by commas are enclosed within brackets [ ].</P>
+<pre>
+    <code>
+        >> # List of integers looks like
+        >> i = [1, 2, 3, 4]
+        >> # list of flot values looks like
+        >> f = [1.23, 3.4, 4.0, -23.2]
+        >> # list of string values looks like
+        >> s = ['abc', 'xyz', 'def']
+        >> # list of list values looks like
+        >> ll = [[1,2,3], ['abc', 'def'], [1.3, 4.6, -34.0]]
+
+    </code>
+</pre>
 <p class="p1">We can use the slicing operator [ ] to extract an item or a range of items from a list.
     Index starts form 0 in Python.</p>
+<pre>
+    <code>
+        >> a = [1, 2, 3, 4]
+        >> # Printing list of values
+        >> print(a)
+        >> [1, 2, 3, 4]
+        >> # getting list values by Positive index number
+        >> print(a[0])
+        >> 1
+        >> print(a[1])
+        >> 2
+        >> print(a[:2])
+        >> [1, 2]
+        >> print(a[1:3])
+        >> [2, 3]
+        >> print(a[1:])
+        >> [2, 3, 4]
+        >>
+        >>
+        >> # getting list values by Negative index number
+        >>
+        >> print(a[-1])
+        >> 4
+        >> print(a[-4])
+        >> 1
+        >> print(a[:-3])
+        >> 1
+        >> print(a([-1:])
+        >> 4
+        >> print(a([-3:-1])
+        >> [2, 3]
+    </code>
+</pre>
 <p class="p1">A list is a mutable or changeable, meaning that the value of elements in a list can be changeable.</p>
+<p class="p1"> see the below example to understand:</p>
+<div class="wrapper">
+    <div class="hidelogo"></div>
+    <div class="hidelogo1"></div>
+    <iframe height="400px" width="100%" src="https://repl.it/@gantasagar/ListMutableExample?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+</div>
+<p class="p1"> By seeing the example, we are able to change the values with in the list.so List is a mutable DataType in Python</p>
 {% endblock %}

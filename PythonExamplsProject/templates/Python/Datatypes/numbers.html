@@ -11,12 +11,74 @@
     function to check if an object belongs to a particular class.</p>
 <header style="color: Navy; font-family: 'Courier New';font-size: 22px;">Integer:</header>
 <P class="p1">Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length i'e(…, -1, 0, 1, …).</P>
+<pre>
+    <code>
+        >> # To Printing integer values
+        >> print(4)
+        >> 4
+        >> print(-8)
+        >> -8
+        >> print(100)
+        >> 100
+        >> # Store integer values into a variable
+        >> x = 40
+        >> y = -50
+        >> z = 0
+        >> print(type(x))
+        >> < class 'int'>
+        >> print(x,y,z)
+        >> 40 -50 0
 
+    </code>
+</pre>
 <header style="color: Navy; font-family: 'Courier New';font-size: 22px;">Float:</header>
 <P class="p1">Floating-point numbers can be numbers that can contain a fractional part, such as 9.0 or -116.42. Simply
     speaking, for the purposes of thinking of a float in a Python program, it is a number that contains a decimal point.</P>
+<pre>
+    <code>
+        >> To print float values
+        >> print(14.46)
+        >> 14.46
+        >> print(-50.02)
+        >> -50.02
+        >> To print the type of the variable
+        >> x = 14.54
+        >> print(type(x))
+        >> < class 'float'>
+        >> a = -10.4 + 50.4
+        >> print(a)
+        >> 40.0
+
+    </code>
+</pre>
 
 <header style="color: Navy; font-family: 'Courier New';font-size: 22px;">Complex:</header>
-<P class="p1">Complex numbers have a real and imaginary part, which are each a floating point number. To extract these
-    parts from a complex number z, use z.real and z.imag.</P>
+<P class="p1">Complex numbers have a real and imaginary part, which are each a floating point number.An complex number
+    is represented by “ x + yi “. </P>
+<pre>
+    <code>
+        >> #Representation of complex numbers
+        >> 1 + 2j
+        >> print(type(1 + 2j)
+        >> < class 'complex'>
+    </code>
+</pre>
+<p class="p1">Python converts the real numbers x and y into complex using the function complex(x,y).
+The real part can be accessed using the function real() and imaginary part can be represented by imag().
+we need to import "cmath" to perform operations on complex numbers.</p>
+<pre>
+    <code>
+        >> import cmath
+        >># Initializing real numbers
+        >> a = 6
+        >> b = 4
+        >> c = complex(a,b)
+        >> # To get real part of the complex number
+        >> print(c.real)
+        >> 6.0
+        >> # To get imaginary part of complex number
+        >> print(c.imag)
+        >> 4.0
+    </code>
+</pre>
 {% endblock %}

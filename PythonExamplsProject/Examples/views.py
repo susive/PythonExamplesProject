@@ -89,6 +89,14 @@ class whileloop(TemplateView):
     template_name = 'Python/Loops/while.html'
 
 
+class functions(TemplateView):
+    template_name = 'Python/Functions/functionwithparentheses.html'
+
+
+class lambdaFun(TemplateView):
+    template_name = 'Python/Functions/lambdaFunction.html'
+
+
 class hello(TemplateView):
     template_name = 'helloworld/h1.html'
 

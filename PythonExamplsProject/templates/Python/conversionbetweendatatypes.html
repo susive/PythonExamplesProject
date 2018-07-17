@@ -4,8 +4,50 @@
 <p class="p1">
 We can convert between different data types by using different type conversion functions like int(), float(), str() etc.
 </p>
-<P class="p1">Conversion from float to int will truncate the value (make it closer to zero).</P>
-<p class="p1">Conversion to and from string must contain compatible values.</p>
+<P class="p1">Conversion from int to other DataTypes.</P>
+<pre>
+    <code>
+        >> a = 4
+        >> # converting from int to float
+        >> b = float(a)
+        >> print(a, b)
+        >> 4 4.0
+        >> # converting from int to string
+        >> c = str(a)
+        >> print(a, c)
+        >> 4 4
+    </code>
+</pre>
+<p class="p1"> We con't convert int to List,Tuple,Dictionaries and sets.because of integer object are not iterable</p>
+<p class="p1">Conversion from Float to other DataTypes.</p>
+<pre>
+    <code>
+        >> f = 40.23
+        >> # converting float to int
+        >> x = int(f)
+        >> print(x)
+        >> 40
+        >> # converting float to string
+        >> y = str(f)
+        >> print(y)
+        >> 40.23
+    </code>
+</pre>
+<p class="p1">we can't convert float values to List,Tuple,Dictionaries and sets.because of float object are also not iterable</p>
+<p class="p1">Conversion String to other DataTypes.</p>
+<pre>
+    <code>
+        >> St = "123"
+        >> # Converting string to int
+        >> i = int(St)
+        >> print(i)
+        >> 123
+        >> # converting String to float
+        >> f = float(St)
+        >> print(f)
+        >> 123.0
+    </code>
+</pre>
 <p class="p1">We can even convert one sequence to another.</p>
 <p class="p1">To convert to dictionary, each element must be a pair</p>
 {% endblock %}
