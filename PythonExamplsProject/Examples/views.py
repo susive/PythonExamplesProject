@@ -97,6 +97,10 @@ class lambdaFun(TemplateView):
     template_name = 'Python/Functions/lambdaFunction.html'
 
 
+class OOPs(TemplateView):
+    template_name = 'Python/OOPS/oops.html'
+
+
 class hello(TemplateView):
     template_name = 'helloworld/h1.html'
 
@@ -107,5 +111,3 @@ class sumodNum(TemplateView):
 
 class Even(TemplateView):
     template_name = 'Evennumbers/even.html'
-
-

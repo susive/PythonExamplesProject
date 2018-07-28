@@ -28,6 +28,7 @@ urlpatterns = [
     url(r"^Loops/for/$", views.forloop.as_view(), name='for'),
     url(r"^Loops/while/$", views.whileloop.as_view(), name='while'),
     url(r"^functions/$", views.functions.as_view(), name='fun'),
-    url(r"^LambdaFunction/$", views.lambdaFun.as_view(), name='lambda')
+    url(r"^LambdaFunction/$", views.lambdaFun.as_view(), name='lambda'),
+    url(r"^OOPs/$", views.OOPs.as_view(), name='oops'),
 
 ]
