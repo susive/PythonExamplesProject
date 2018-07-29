@@ -101,6 +101,26 @@ class OOPs(TemplateView):
     template_name = 'Python/OOPS/oops.html'
 
 
+class objs(TemplateView):
+    template_name = 'Python/OOPS/object.html'
+
+
+class cls(TemplateView):
+    template_name = 'Python/OOPS/class.html'
+
+
+class Inheritance(TemplateView):
+    template_name = 'Python/OOPS/inheritance.html'
+
+
+class Encap(TemplateView):
+    template_name = 'Python/OOPS/Encap.html'
+
+
+class Poly(TemplateView):
+    template_name = 'Python/OOPS/PolyMor.html'
+
+
 class hello(TemplateView):
     template_name = 'helloworld/h1.html'
 

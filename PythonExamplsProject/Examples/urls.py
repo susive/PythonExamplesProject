@@ -30,5 +30,9 @@ urlpatterns = [
     url(r"^functions/$", views.functions.as_view(), name='fun'),
     url(r"^LambdaFunction/$", views.lambdaFun.as_view(), name='lambda'),
     url(r"^OOPs/$", views.OOPs.as_view(), name='oops'),
-
+    url(r"^obj/$", views.objs.as_view(), name='obj'),
+    url(r"^class/$", views.cls.as_view(), name='cls'),
+    url(r"^Inheritance/$", views.Inheritance.as_view(), name='Inh'),
+    url(r"^Encapsulation/$", views.Encap.as_view(), name='encap'),
+    url(r"^Polymorphism/$", views.Poly.as_view(), name='poly')
 ]
