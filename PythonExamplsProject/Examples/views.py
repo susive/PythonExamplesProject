@@ -121,6 +121,10 @@ class Poly(TemplateView):
     template_name = 'Python/OOPS/PolyMor.html'
 
 
+class FileHandling(TemplateView):
+    template_name = 'Python/File Handling/filehandling.html'
+
+
 class hello(TemplateView):
     template_name = 'helloworld/h1.html'
 

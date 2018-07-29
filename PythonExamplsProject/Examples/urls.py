@@ -34,5 +34,7 @@ urlpatterns = [
     url(r"^class/$", views.cls.as_view(), name='cls'),
     url(r"^Inheritance/$", views.Inheritance.as_view(), name='Inh'),
     url(r"^Encapsulation/$", views.Encap.as_view(), name='encap'),
-    url(r"^Polymorphism/$", views.Poly.as_view(), name='poly')
+    url(r"^Polymorphism/$", views.Poly.as_view(), name='poly'),
+    url(r"^File/$", views.FileHandling.as_view(), name='file'),
+
 ]
