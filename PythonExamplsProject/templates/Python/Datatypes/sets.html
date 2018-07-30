@@ -1,19 +1,23 @@
 {% extends "Python/Datatypes/datatypes.html" %}
 {% block content3 %}
-<header style="color: Navy; font-family: 'Courier New';font-size: 22px;">Python Set:</header>
+<header style="color: Navy; font-family: 'Courier New';font-size: 22px;">Python Sets:</header>
 <P class="p1">Set is an unordered collection of unique, iterable and mutable objects.
     Set is defined by values separated by comma inside braces { }.<br>
-    <a href="#section1">Creating a empty set:</a><br>
+    <a href="#section1">Creating a empty Sets:</a><br>
     <a href="#section2">Python Frozensets:</a>
     </p>
 <header style="color: Navy; font-family: 'Courier New';font-size: 22px;" ID="section1">Creating a empty set:</header>
+<p class="p1">To create an empty set in Python, the following code below is used.</p>
 <pre>
     <code>
+        >> # Creating an empty set
         >> set1 = set()
+        >> # getting type of the variable
         >> type(set1)
         >> < class 'set'>
     </code>
 </pre>
+<p class="p1">Inserting a values into sets:</p>
 <pre>
     <code>
         >> my_set = {1,2,2,3,4,5}
@@ -35,5 +39,5 @@ We can add single element using the add() method and multiple elements using the
     <div class="hidelogo1"></div>
     <iframe height="400px" width="100%" src="https://repl.it/@gantasagar/Frozensets?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 </div>
-<p class="p1">In the above example we are unable to add value to the Frozenset. because of Frozensets are immutable</p>
+<p class="p1">If we run above example it will give error like <i style="color:blue">"AttributeError: 'frozenset' object has no attribute 'add'"</i>. because of Frozensets are immutable.</p>
 {% endblock %}

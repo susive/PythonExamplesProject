@@ -8,6 +8,7 @@ urlpatterns = [
     url(r"^even/$", views.Even.as_view(), name="even"),
     url(r"^useofpython/$", views.UseofPython.as_view(), name='use'),
     url(r"why/$", views.WhyPython.as_view(), name='why'),
+    url(r"^start/$", views.GettingStart.as_view(), name="gst"),
     url(r"^variable/$", views.Variablediclration.as_view(), name='var'),
     url(r"^DataTypes/$", views.DataTypes.as_view(), name='dt'),
     url(r"DataTypes/bool/$", views.Bool.as_view(), name='bool'),

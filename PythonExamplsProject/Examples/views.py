@@ -13,6 +13,10 @@ class WhyPython(TemplateView):
     template_name = 'whypython.html'
 
 
+class GettingStart(TemplateView):
+    template_name = 'start.html'
+
+
 class Variablediclration(TemplateView):
     template_name = 'Python/variable.html'
 
