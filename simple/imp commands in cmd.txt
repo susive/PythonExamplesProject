@@ -1,0 +1,78 @@
+Oj5thfwl
+
+<Connector port="443" protocol="HTTP/1.1"
+connectionTimeout="20000"
+SSLEnabled="true" scheme="https" keystoreFile="/opt/abc.keystore" keystorePass="test123" clientAuth="false" sslProtocol="TLS"
+redirectPort="8443" />
+
+apache webserver install in windows
+
+https://www.thewindowsclub.com/install-apache-on-windows-10
+https://in.video.search.yahoo.com/yhs/search;_ylt=AwrxhWoWuUxgH10ADgvnHgx.;_ylu=Y29sbwMEcG9zAzIEdnRpZANCODg2N18xBHNlYwNzYw--?p=how+to+install+apache+http+server+in+windows10&type=VPGCNBK0FG_0022-20210224-2579647-DSCH06_RE&hsimp=yhs-direct_search&hspart=
+motherpipe&ei=UTF-8&fr=yhs-motherpipe-direct_search#id=1&vid=a742ee08d29f84ba3614a23a2b3908d5&action=view
+
+
+<secret value="YWRtaW4xMjMk" />
+<secret value="YWRtaW4xMjMk" />
+
+
+In command prompt
+
+ Standalone Mode:
+Add user :add-user.bat
+    go to Eap home up to bin directory
+     C:\EAP_7.1_Practice_2021\bin>add-user.bat
+start server:  standalone.bat
+  go to Eap home up to bin directory
+  C:\EAP_7.1_Practice_2021\bin>standalone.bat
+
+check portnumbers:netstat -aon|findstr portnumber
+   go to Eap home up to bin directory
+   C:\EAP_7.1_Practice_2021\bin>netstat -aon|findstr 9990
+   C:\EAP_7.1_Practice_2021\bin>netstat -aon|findstr 8080
+   C:\EAP_7.1_Practice_2021\bin>netstat -aon|findstr 8443
+   C:\EAP_7.1_Practice_2021\bin>netstat -aon|findstr 8009
+
+stop server: ctrl+c
+
+chang port number:  standalone.bat -Djboss.socket.binding.port-offset=200
+                    standalone.bat -Djboss.socket.binding.port-offset=300
+
+ex: C:\EAP_7.1_Practice_2021\bin>standalone.bat -Djboss.socket.binding.port-offset=200
+    C:\EAP_7.1_Practice_2021\bin>standalone.bat -Djboss.socket.binding.port-offset=300
+                    
+
+ start another server: standalone.bat -Djboss.server.base.dir="C:\EAP_7.1_Reg_2021\standalone-server2" 
+                               -Djboss.socket.binding.port-offset=200
+   
+   
+ ex:    C:\EAP_7.1_Practice_2021\bin>standalone.bat -Djboss.server.base.dir="C:\EAP_7.1_Reg_2021\standalone-server2" 
+                                      -Djboss.socket.binding.port-offset=200
+        C:\EAP_7.1_Practice_2021\bin>standalone.bat -Djboss.server.base.dir="C:\EAP_7.1_Reg_2021\standalone-server3" 
+                                      -Djboss.socket.binding.port-offset=300
+Domain Mode:
+
+start the server:
+  C:\EAP_7.1_Practice_2021\bin>domin.bat
+
+** JBOSS Installation Using GUI mode 
+ find the .jar file like jboss-eap-7.1.0-installer.jar and open this.
+
+** JBOSS Installation Using Console Mode
+find the .jar file like   jboss-eap-7.1.0-installer.jar
+E:\jboss_students>java -jar jboss-eap-7.1.0-installer.jar -console
+->we will get another prompt like this(c:\programfiles\Java\jre1.8.0_144\bin\java.exe)
+
+** JBOSS Installation Using Silent Mode
+-->find auto.xml file from the setups(console or Gui mode).
+-->i copied in E:\jboss_students\auto.xml
+-->edit auto.xml like <installpath>E:\EAP_7.1_Reg_2021_Silent</installpath> and save it.
+E:\EAP_7.1_Reg_2021_Silent\bin>java -jar jboss-eap-7.1.0-installer.jar auto.xml
+
+
+
+
+C:\EAP_7.1_Reg_2021\modules\system\layers\base\com\oracle\main\ojdbc6.jar
+connect localhost:10190
+module add --name=com.oracle --resources=E:/ojdbc6.jar --dependencies=javax.api,javax.trasaction.api
+/subsystem=datasources/jdbc-driver=oracle:add(driver-name=oracle,driver-module-name=com.oracle)
